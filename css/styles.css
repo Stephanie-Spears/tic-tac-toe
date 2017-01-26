@@ -1,0 +1,14 @@
+#play-area {
+border: 3px solid red;
+width: 900px;
+
+
+}
+#row1, #row2, #row3 {
+  height: 275px;
+  border: 2px solid red;
+}
+.col-xs-4 {
+  border: 2px solid blue;
+  height: 275px;
+}
