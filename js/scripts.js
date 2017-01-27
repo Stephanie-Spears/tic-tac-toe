@@ -1,3 +1,11 @@
+$(function() {
+  $(".col-xs-4").click(function() {
+    var place = parseInt(this.id.replace(/[^1-9]/g, ""));
+    alert(place);
+    this.addClass("test")
+
+  });
+})
 var Board = function() {
   this.currentState = [
     [],
@@ -41,6 +49,7 @@ Board.prototype.isValidMove = function(xPos, yPos) {
   if (this.currentState[xPos][yPos]) {
     return false;
   } else {
+    this.placeMarker(xPos, yPos);
     return true
   }
 };
@@ -53,8 +62,6 @@ Board.prototype.placeMarker = function(xPos, yPos) {
     alert("not a valid move");
   }
 };
-
-$()
 
 
 
